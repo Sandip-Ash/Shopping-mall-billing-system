@@ -108,7 +108,41 @@ void LOGIN()
   exit(0);
 }
 
-void BOX(void)
+void BOX(void)                  //NEW VERSION OF BOX FUNCTION
+{
+   int x=12, y=1, x1=54, y1=21, c=14;
+   int i;
+   textcolor(c);
+   for(i=0;i<x1;i++)
+   {
+      gotoxy(x+i,y);
+      cprintf("%c",196);
+
+      gotoxy(x+i,y+2);
+      cprintf("-");
+
+      gotoxy(x+x1-i,y+y1);
+      cprintf("%c",196);
+   }
+   for(i=0;i<y1;i++)
+   {
+      gotoxy(x,y+i);
+      cprintf("%c",179);
+      gotoxy(x+x1,y+y1-i);
+      cprintf("%c",179);
+   }
+   gotoxy(x,y);
+   cprintf("%c",218);
+   gotoxy(x+x1,y);
+   cprintf("%c",191);
+   gotoxy(x,y+y1);
+   cprintf("%c",192);
+   gotoxy(x+x1,y+y1);
+   cprintf("%c",217);
+}
+
+/*
+void BOX(void)	                //OLDER VERSION OF BOX FUNCTION
 {
   for(int i=18;i<60;i+=2)
   { gotoxy(i,1);
@@ -131,6 +165,7 @@ void BOX(void)
     cout<<"+";
   }
 }
+*/
 
 void CREATE()
 {

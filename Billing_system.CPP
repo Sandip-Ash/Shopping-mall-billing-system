@@ -76,7 +76,7 @@ void PRODUCT::SHOW()
   cout<<"Product discount: "<<discount;
 }
 
-void LOGIN()
+void LOGIN()						//PASSWORD LOGIN 
 { clrscr();
   int pos=1;
   char pass1,pass2,pass3,pass4,pass5;
@@ -167,7 +167,7 @@ void BOX(void)	                //OLDER VERSION OF BOX FUNCTION
 }
 */
 
-void CREATE()
+void CREATE()							//CREATING NEW ITEMS
 {
   BOX();
   gotoxy(32,2);
@@ -182,7 +182,7 @@ void CREATE()
   getch();
 }
 
-void DISPLAY()
+void DISPLAY()							//DISPLAY ALL THE ITEMS
 {
   clrscr();
   BOX();
@@ -200,7 +200,7 @@ void DISPLAY()
 
 }
 
-void SEARCH()
+void SEARCH()							//SEARCH AN ITEM USING LINEAR SEARCH
 {
    int flag=0,x;
    BOX();
@@ -228,7 +228,7 @@ void SEARCH()
    getch();
 }
 
-void MODIFY()
+void MODIFY()								//MODIFY ANY ITEM
 {
    int n,pos,flag=0;
    clrscr();
@@ -270,7 +270,7 @@ void MODIFY()
    getch();
 }
 
-void DELETE()
+void DELETE()								//DELETE ANY ITEM
 {
   int n;
   clrscr();
@@ -300,7 +300,7 @@ void DELETE()
   getch();
 }
 
-void MENU()
+void MENU()								MAIN MENU
 {
   clrscr();
   ifstream fin;
@@ -335,7 +335,7 @@ void MENU()
   fin.close();
 }
 
-void ORDER()
+void ORDER()							PLACING ORDERS
 {
   int order[20], qty[20], c=0;
   float amt, damt, total=0;
@@ -397,7 +397,7 @@ void ORDER()
   getch();
 }
 
-void INTRO()
+void INTRO()								//INTRO OF THIS PROGRAM
 {
   clrscr();
   BOX();
@@ -416,7 +416,7 @@ void INTRO()
   getch();
 }
 
-void ADMINISTRATION()
+void ADMINISTRATION()						//ADMINISTRATION MENU
 {
   clrscr();
   BOX();
